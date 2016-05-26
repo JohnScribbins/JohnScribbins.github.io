@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/><link rel="shortcut icon"/><style id="typography.js">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+html {
+  box-sizing: border-box;
+  font-size: 112.5%;
+  line-height: 1.5em;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: hsl(0,0%,80%);
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dl,dd,p,figure,pre,table,fieldset,blockquote,form,noscript,iframe,img,hr {
+margin: 0;
+margin-bottom: 1.5rem;
+padding: 0;
+}
+
+blockquote {
+margin: 1.5rem 3.75rem;
+}
+
+b,strong {
+font-weight: 700
+}
+
+hr {
+background: hsl(0,0%,80%);
+border: none;
+height: 1px;
+margin-bottom: calc(1.5rem - 1px);
+}
+
+ol,ul {
+list-style-position: outside;
+margin-left: 1.5rem;
+}
+
+ul li,ol li {
+padding-left: 0;
+}
+
+code,kbd,pre,samp {
+font-size: 0.85rem;
+line-height: 1.5rem;
+}
+
+table {
+font-size: 1rem;
+line-height: 2.25rem;
+width: 100%;
+}
+
+thead {
+text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color: hsl(0,0%,90%);
+font-family: "Roboto", Helvetica, Arial, sans-serif;
+font-weight: 300;
+}
+
+h1 {
+font-size: 1.728rem;
+line-height: 2.25rem;
+}
+
+h2 {
+font-size: 1.44rem;
+line-height: 2.25rem;
+}
+
+h3 {
+font-size: 1.2rem;
+line-height: 1.5rem;
+}
+
+h4 {
+font-size: 1.12924rem;
+line-height: 1.5rem;
+}
+
+h5 {
+font-size: 1.06266rem;
+line-height: 1.5rem;
+}
+
+h6 {
+font-size: 1rem;
+line-height: 1.5rem;
+}
+
+
+</style><style>@import url(https://fonts.googleapis.com/css?family=Roboto:300,600);@import url(https://fonts.googleapis.com/css?family=Lato:300,700);html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.35765%;
+  padding-right: 2.35765%; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.col-6-12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .col-6-12:last-child {
+    margin-right: 0; }
+  .col-6-12:nth-child(2n) {
+    margin-right: 0; }
+
+.col-4-12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .col-4-12:last-child {
+    margin-right: 0; }
+  .col-4-12:nth-child(3n) {
+    margin-right: 0; }
+
+.col-3-12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .col-3-12:last-child {
+    margin-right: 0; }
+  .col-3-12:nth-child(4n) {
+    margin-right: 0; }
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .col-6-12-tablet {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .col-6-12-tablet:last-child {
+      margin-right: 0; }
+    .col-6-12-tablet:nth-child(2n) {
+      margin-right: 0; } }
+
+@media screen and (max-width: 425px) {
+  .col-12-12-mobile {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .col-12-12-mobile:last-child {
+      margin-right: 0; }
+    .col-12-12-mobile:nth-child(1n) {
+      margin-right: 0; } }
+.headroom .container {
+  padding: 0; }
+
+.headroom a {
+  padding: 20px 2.35765%;
+  display: inline-block; }
+
+.headroom .link {
+  float: right; }
+
+.slider {
+  margin: 0 0 20px 0; }
+
+.slider-content {
+  height: 100vh !important;
+  display: block; }
+
+.container h1.title {
+  margin: 0.5em 0; }
+
+.share-container {
+  margin-bottom: 1em; }
+  .share-container .share {
+    display: inline-block;
+    width: 32px;
+    margin-right: 5px;
+    cursor: pointer; }
+
+.hero-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 20px 0;
+  max-height: 100vh; }
+  .hero-container * {
+    margin: 0; }
+
+footer {
+  margin: 40px 0 0 0;
+  padding: 20px 0; }
+html {
+  background: #1a252f; }
+
+.headroom {
+  background: #23405d;
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  .headroom a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all ease 0.3s; }
+    .headroom a:hover {
+      background: rgba(255, 255, 255, 0.1); }
+  .headroom .brand-link {
+    font-size: 25px; }
+
+footer {
+  background: #233140; }
+  footer * {
+    color: #597ea2;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  footer h3 {
+    font-size: 15px;
+    margin-bottom: 5px; }
+
+.slider {
+  background: #080b0e; }
+
+.slider-decorator-0,
+.slider-decorator-1,
+.slider-decorator-2 {
+  font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif; }
+
+.slider-decorator-2 button {
+  color: #ffffff !important; }
+.warning{color:#9f6000;background-color:#feefb3;padding:18px}.warning:before{content:'\26A0';margin-right:9px}</style><title data-react-helmet="true">Work | Lemonstein</title><meta data-react-helmet="true" name="description" content="Jelly-o sweet soufflé chocolate marzipan chocolate cake I love. Sweet roll marshmallow brownie pudding tart marzipan lemon drops bear claw."/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="-1727969994"><!-- react-empty: 2 --><div class="headroom-wrapper" data-reactid="3"><div style="position:relative;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);" class="headroom headroom--pinned" data-reactid="4"><div class="container" data-reactid="5"><a class="brand-link" href="/" data-reactid="6">Lemonstein</a><a class="link" href="/work/" data-reactid="7">Work</a></div></div></div><div class="container" data-reactid="8"><!-- react-empty: 9 --><a class="brand-link" href="/work/medieval-dioramas/" data-reactid="10">Medieval Dioramas</a></div><footer data-reactid="11"><div class="container" data-reactid="12"><div class="col-6-12 col-12-12-mobile" data-reactid="13"><a href="/" data-reactid="14">Home</a><a href="/work/" data-reactid="15">Work</a></div><div class="col-6-12 col-12-12-mobile" data-reactid="16"><p data-reactid="17">Copyright 2016</p></div></div></footer></div></div><script src="/bundle.js?t=1464107688489"></script></body></html>
