@@ -66,6 +66,9 @@
       margin-right: 0; }
     .col-12-12-mobile:nth-child(1n) {
       margin-right: 0; } }
+.overflow-hidden {
+  overflow: hidden; }
+
 .headroom .container {
   padding: 0; }
 
