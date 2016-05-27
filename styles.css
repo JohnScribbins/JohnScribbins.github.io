@@ -66,6 +66,10 @@
       margin-right: 0; }
     .col-12-12-mobile:nth-child(1n) {
       margin-right: 0; } }
+.icon {
+  display: inline-block;
+  transition: all ease 0.3s; }
+
 .overflow-hidden {
   overflow: hidden; }
 
@@ -111,6 +115,19 @@
 footer {
   margin: 40px 0 0 0;
   padding: 20px 0; }
+  footer .icon {
+    height: 30px; }
+    footer .icon span {
+      float: left;
+      padding-top: 2px;
+      padding-left: 5px; }
+    footer .icon img {
+      width: 30px; }
+  footer .navigation {
+    margin-right: 15px;
+    text-decoration: none;
+    padding: 0 5px;
+    display: inline-block; }
 html {
   background: #1a252f; }
 
@@ -136,6 +153,10 @@ footer {
   footer h3 {
     font-size: 15px;
     margin-bottom: 5px; }
+  footer a.navigation, footer a.icon {
+    transition: all ease 0.3s; }
+    footer a.navigation:hover, footer a.icon:hover {
+      background: rgba(0, 0, 0, 0.25); }
 
 .slider {
   background: #080b0e; }
