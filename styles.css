@@ -131,6 +131,9 @@ footer {
 html {
   background: #1a252f; }
 
+a {
+  color: #ffffff; }
+
 .headroom {
   background: #23405d;
   font-family: "Roboto", Helvetica, Arial, sans-serif; }
